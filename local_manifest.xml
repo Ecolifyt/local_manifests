@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	
+	<remote name="yaz" fetch="https://github.com/yaznas/" />
+	<remote name="derpaosp" fetch="https://github.com/DerpFest-AOSP" />
+	<remote name="derpdevices" fetch="https://github.com/DerpFest-Devices" />
+	<remote name="derp-gitlab" fetch="https://gitlab.com/Derpfest" />
+	<remote name="themuppets" fetch="https://github.com/TheMuppets" />
+	<remote name="v4a" fetch="https://github.com/TogoFire" />
+
+	<!-- Device -->
+	<project path="device/google/pantah" name="device_google_pantah" remote="yaz" revision="15" />
+	<project path="device/google/lynx" name="device_google_lynx" remote="yaz" revision="15" />
+	<project path="device/google/gs201" name="device_google_gs201" remote="yaz" revision="15" />
+	<project path="device/google/gs101" name="device_google_gs101" remote="derpdevices" revision="15" />
+
+	<!-- Vendor -->
+	<project path="vendor/google/camera" name="vendor_google_camera" remote="derp-gitlab" revision="15" />
+	<!-- <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="derpaosp" revision="15" /> -->
+	<project path="vendor/google/panther" name="proprietary_vendor_google_panther" remote="themuppets" revision="lineage-22.1" />
+	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="themuppets" revision="lineage-22.1" />
+	<project path="vendor/google/lynx" name="proprietary_vendor_google_lynx" remote="themuppets" revision="lineage-22.1" />
+
+	<!-- Packages -->
+	<project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="v4a" revision="v4a" />
+	
+</manifest>
