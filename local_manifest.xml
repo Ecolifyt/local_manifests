@@ -14,7 +14,7 @@
 	<project path="device/google/lynx" name="device_google_lynx" remote="ri" revision="fifteen" />
 	<project path="device/google/gs201" name="android_device_google_gs201" remote="ri" revision="fifteen" />
 	<project path="device/google/gs101" name="device_google_gs101" remote="ri" revision="fifteen" />
-        <project path="device/google/common" name="android_device_google_common" remote="ri" revision="fifteen" />
+        <project path="device/google/common" name="android_device_google_gs-common" remote="ri" revision="fifteen" />
 	<!-- Vendor -->
 	<project path="vendor/google/camera" name="vendor_google_camera" remote="derp-gitlab" revision="15" />
 	<!-- <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="derpaosp" revision="15" /> -->
