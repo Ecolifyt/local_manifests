@@ -37,8 +37,6 @@
 	<project path="device/google/gs-common" name="android_device_google_gs-common" remote="ri" revision="fifteen" />
 	<project path="device/google/pantah-kernels/6.1" name="device/google/pantah-kernels/6.1" remote="aosp" />
 	
-	<!-- Vendor -->
-	<project path="vendor/google/camera" name="vendor_google_camera" remote="derp-gitlab" revision="15" />
 	<!-- <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="derpaosp" revision="15" /> -->
 	<project path="vendor/google/panther" name="vendor_google_panther" remote="ri" revision="fifteen" />
 	<project path="vendor/google/cheetah" name="vendor_google_cheetah" remote="ri" revision="fifteen" />
