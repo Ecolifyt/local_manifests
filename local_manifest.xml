@@ -8,27 +8,25 @@
 	<remote name="themuppets" fetch="https://github.com/TheMuppets" />
 	<remote name="v4a" fetch="https://github.com/TogoFire" />
 	<remote name="ri" fetch="https://github.com/RisingOS-Revived-devices" />
-        <remote  name="aosp"
-                 fetch="https://android.googlesource.com"
-                 review="android-review.googlesource.com"
-                 revision="refs/tags/android-15.0.0_r32" />
-	<remote  name="github"
-         fetch=".."
-         review="review.lineageos.org" />
-
-        <remote  name="crdroid-gitlab"
-         fetch="https://gitlab.com/crdroidandroid/"
-         revision="refs/heads/15.0" />
+        <remote name="aosp"
+                fetch="https://android.googlesource.com"
+                review="android-review.googlesource.com"
+                revision="refs/tags/android-15.0.0_r32" />
+	<remote name="github"
+                fetch=".."
+                review="review.lineageos.org" />
+        <remote name="crdroid-gitlab"
+                fetch="https://gitlab.com/crdroidandroid/"
+                revision="refs/heads/15.0" />
         <remote name="lineage"
-         fetch="https://github.com/LineageOS"
-         revision="lineage-22.2" />
-       <!-- Remove Projects -->
+                fetch="https://github.com/LineageOS"
+                revision="lineage-22.2" />
+        <!-- Remove Projects -->
         <remove-project path="hardware/google/pixel" />
         <remove-project path="hardware/google/pixel-sepolicy" />
         <remove-project path="hardware/google/gchips" />
         <remove-project path="hardware/google/graphics/common" />
         <remove-project path="hardware/google/camera" />
-	
 	<!-- Device -->
 	<project path="device/google/pantah" name="device_google_pantah" remote="ri" revision="fifteen" />
 	<project path="device/google/lynx" name="device_google_lynx" remote="ri" revision="fifteen" />
