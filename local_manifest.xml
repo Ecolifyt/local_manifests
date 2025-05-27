@@ -8,21 +8,53 @@
 	<remote name="themuppets" fetch="https://github.com/TheMuppets" />
 	<remote name="v4a" fetch="https://github.com/TogoFire" />
 	<remote name="ri" fetch="https://github.com/RisingOS-Revived-devices" />
+        <remote  name="aosp"
+                 fetch="https://android.googlesource.com"
+                 review="android-review.googlesource.com"
+                 revision="refs/tags/android-15.0.0_r32" />
+	<remote  name="github"
+         fetch=".."
+         review="review.lineageos.org" />
 
+        <remote  name="crdroid-gitlab"
+         fetch="https://gitlab.com/crdroidandroid/"
+         revision="refs/heads/15.0" />
+        <remote name="lineage"
+         fetch="https://github.com/LineageOS"
+         revision="lineage-22.2" />
+       <!-- Remove Projects -->
+        <remove-project path="hardware/google/pixel" />
+        <remove-project path="hardware/google/pixel-sepolicy" />
+        <remove-project path="hardware/google/gchips" />
+        <remove-project path="hardware/google/graphics/common" />
+        <remove-project path="hardware/google/camera" />
+	
 	<!-- Device -->
 	<project path="device/google/pantah" name="device_google_pantah" remote="ri" revision="fifteen" />
 	<project path="device/google/lynx" name="device_google_lynx" remote="ri" revision="fifteen" />
 	<project path="device/google/gs201" name="android_device_google_gs201" remote="ri" revision="fifteen" />
 	<project path="device/google/gs101" name="device_google_gs101" remote="ri" revision="fifteen" />
         <project path="device/google/gs-common" name="android_device_google_gs-common" remote="ri" revision="fifteen" />
+	<project path="device/google/pantah-kernels/6.1" name="device/google/pantah-kernels/6.1" remote="aosp"
 	<!-- Vendor -->
 	<project path="vendor/google/camera" name="vendor_google_camera" remote="derp-gitlab" revision="15" />
 	<!-- <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="derpaosp" revision="15" /> -->
 	<project path="vendor/google/panther" name="vendor_google_panther" remote="ri" revision="fifteen" />
 	<project path="vendor/google/cheetah" name="vendor_google_cheetah" remote="ri" revision="fifteen" />
 	<project path="vendor/google/lynx" name="vendor_google_lynx" remote="ri" revision="fifteen" />
-
-	<!-- Packages -->
-	<project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="v4a" revision="v4a" />
+        <!-- LineageOS Pixel Hardware Trees -->
+        <project name="LineageOS/android_hardware_google_pixel" path="hardware/google/pixel" remote="github" revision="lineage-22.2" />
+        <project name="LineageOS/android_hardware_google_pixel-sepolicy" path="hardware/google/pixel-sepolicy" remote="github" revision="lineage-22.2" />
+        <project name="LineageOS/android_hardware_google_gchips" path="hardware/google/gchips" remote="github" revision="lineage-22.2" />
+        <project name="LineageOS/android_hardware_google_graphics_common" path="hardware/google/graphics/common" remote="github" revision="lineage-22.2" />
+        <project name="LineageOS/android_hardware_google_camera" path="hardware/google/camera" remote="github" revision="lineage-22.2" />
+	<!-- Extra trees -->
+        <project name="proprietary_vendor_google_faceunlock" path="vendor/google/faceunlock" remote="crdroid-gitlab" revision="15.0" />
+        <project name="proprietary_vendor_google_camera" path="vendor/google/camera" remote="crdroid-gitlab" revision="15.0">
+                <linkfile src="config.mk" dest="vendor/google/camera/camera.mk" />
+        </project>
+        <project name="crdroidandroid/android_packages_apps_PixelParts" path="packages/apps/PixelParts" remote="github" revision="15.0" />
+        <project name="Chaitanyakm/vendor_bcr" path="vendor/bcr" remote="github" revision="main" />
+        <project name="TogoFire/packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" remote="github" revision="v4a" />
 	
 </manifest>
