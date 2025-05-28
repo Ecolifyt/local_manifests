@@ -19,12 +19,12 @@
 	        revision="lineage-22.2" />
 	
 	<!-- Device -->
-	<project path="device/google/pantah" name="android_device_google_pantah" remote="lineageos" />
-	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="lineageos" />
-	<project path="device/google/lynx" name="android_device_google_lynx" remote="lineageos" />
-	<project path="device/google/gs201" name="android_device_google_gs201" remote="lineageos" />
-	<project path="device/google/gs101" name="android_device_google_gs101" remote="lineageos" />
-	<project path="device/google/gs-common" name="android_device_google_gs-common" remote="lineageos" />
+	<project path="device/google/pantah" name="android_device_google_pantah" remote="lineage" />
+	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="lineage" />
+	<project path="device/google/lynx" name="android_device_google_lynx" remote="lineage" />
+	<project path="device/google/gs201" name="android_device_google_gs201" remote="lineage" />
+	<project path="device/google/gs101" name="android_device_google_gs101" remote="lineage" />
+	<project path="device/google/gs-common" name="android_device_google_gs-common" remote="lineage" />
 	<project path="device/google/pantah-kernels/6.1" name="device/google/pantah-kernels/6.1" remote="aosp" />
 	
 	<!-- <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="derpaosp" revision="15" /> -->
