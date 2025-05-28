@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	
-	<remote name="yaz" fetch="https://github.com/yaznas/" />
-	<remote name="derpaosp" fetch="https://github.com/DerpFest-AOSP" />
-	<remote name="derpdevices" fetch="https://github.com/DerpFest-Devices" />
-	<remote name="derp-gitlab" fetch="https://gitlab.com/Derpfest" />
 	<remote name="themuppets" fetch="https://github.com/TheMuppets" />
 	<remote name="v4a" fetch="https://github.com/TogoFire" />
 	<remote name="ri" fetch="https://github.com/RisingOS-Revived-devices" />
@@ -22,33 +18,22 @@
 	        fetch="https://github.com/LineageOS"
 	        revision="lineage-22.2" />
 	
-	<!-- Remove Projects -->
-	<remove-project path="hardware/google/pixel" />
-	<remove-project path="hardware/google/pixel-sepolicy" />
-	<remove-project path="hardware/google/gchips" />
-	<remove-project path="hardware/google/graphics/common" />
-	<remove-project path="hardware/google/camera" />
-	
 	<!-- Device -->
-	<project path="device/google/pantah" name="device_google_pantah" remote="ri" revision="fifteen" />
-	<project path="device/google/lynx" name="device_google_lynx" remote="ri" revision="fifteen" />
-	<project path="device/google/gs201" name="android_device_google_gs201" remote="ri" revision="fifteen" />
-	<project path="device/google/gs101" name="device_google_gs101" remote="ri" revision="fifteen" />
-	<project path="device/google/gs-common" name="android_device_google_gs-common" remote="ri" revision="fifteen" />
+	<project path="device/google/pantah" name="android_device_google_pantah" remote="lineageos" />
+	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="lineageos" />
+	<project path="device/google/lynx" name="android_device_google_lynx" remote="lineageos" />
+	<project path="device/google/gs201" name="android_device_google_gs201" remote="lineageos" />
+	<project path="device/google/gs101" name="android_device_google_gs101" remote="lineageos" />
+	<project path="device/google/gs-common" name="android_device_google_gs-common" remote="lineageos" />
 	<project path="device/google/pantah-kernels/6.1" name="device/google/pantah-kernels/6.1" remote="aosp" />
 	
 	<!-- <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="derpaosp" revision="15" /> -->
-	<project path="vendor/google/panther" name="vendor_google_panther" remote="ri" revision="fifteen" />
-	<project path="vendor/google/cheetah" name="vendor_google_cheetah" remote="ri" revision="fifteen" />
-	<project path="vendor/google/lynx" name="vendor_google_lynx" remote="ri" revision="fifteen" />
+	<project path="vendor/google/panther" name="proprietary_vendor_google_panther" remote="themuppets" revision="lineage-22.2" />
+	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="themuppets" revision="lineage-22.2" />
+	<project path="vendor/google/lynx" name="proprietary_vendor_google_lynx" remote="themuppets" revision="lineage-22.2" />
 	
 	<!-- LineageOS Pixel Hardware Trees -->
 	<project name="LineageOS/android_hardware_google_pixel" path="hardware/google/pixel" remote="github" revision="lineage-22.2" />
-	<project name="LineageOS/android_hardware_google_pixel-sepolicy" path="hardware/google/pixel-sepolicy" remote="github" revision="lineage-22.2" />
-	<project name="LineageOS/android_hardware_google_gchips" path="hardware/google/gchips" remote="github" revision="lineage-22.2" />
-	<project name="LineageOS/android_hardware_google_graphics_common" path="hardware/google/graphics/common" remote="github" revision="lineage-22.2" />
-	<project name="LineageOS/android_hardware_google_camera" path="hardware/google/camera" remote="github" revision="lineage-22.2" />
-	
 	<!-- Extra trees -->
 	<project name="proprietary_vendor_google_faceunlock" path="vendor/google/faceunlock" remote="crdroid-gitlab" revision="15.0" />
 	<project name="proprietary_vendor_google_camera" path="vendor/google/camera" remote="crdroid-gitlab" revision="15.0">
