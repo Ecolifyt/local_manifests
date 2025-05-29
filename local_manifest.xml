@@ -19,6 +19,9 @@
 	        revision="lineage-22.2" />
 	<remote name="crd"
 	        fetch="https://github.com/Ecolifyt" />
+        <remote name="evo"
+	        fetch="https://github.com/Evolution-X-Devices"
+	        revision="vic" />
 	
 	<!-- Device -->
 	<project path="device/google/pantah" name="device_google_pantah" remote="ri" revision="fifteen" />
@@ -39,7 +42,7 @@
 	<project name="proprietary_vendor_google_camera" path="vendor/google/camera" remote="crdroid-gitlab" revision="15.0">
 	        <linkfile src="config.mk" dest="vendor/google/camera/camera.mk" />
 	</project>
-	<project name="crdroidandroid/android_packages_apps_PixelParts" path="packages/apps/PixelParts" remote="github" revision="15.0" />
+	<project name="packages_apps_PixelParts" path="packages/apps/PixelParts" remote="evo" />
 	<project name="Chaitanyakm/vendor_bcr" path="vendor/bcr" remote="github" revision="main" />
 	<project name="TogoFire/packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" remote="github" revision="v4a" />
 	
