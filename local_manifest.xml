@@ -17,6 +17,8 @@
 	<remote name="lineage"
 	        fetch="https://github.com/LineageOS"
 	        revision="lineage-22.2" />
+	<remote name="crd"
+	        fetch="https://github.com/Ecolifyt" />
 	
 	<!-- Remove Projects -->
 	<remove-project path="hardware/google/pixel" />
@@ -25,10 +27,10 @@
 	<remove-project path="hardware/google/graphics/common" />
 	<remove-project path="hardware/google/camera" />
 	<!-- Device -->
-	<project path="device/google/pantah" name="android_device_google_pantah" remote="lineage" />
+	<project path="device/google/pantah" name="device_google_pantah" remote="ri" revision="fifteen" />
 	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="lineage" />
 	<project path="device/google/lynx" name="android_device_google_lynx" remote="lineage" />
-	<project path="device/google/gs201" name="android_device_google_gs201" remote="ri" revision="fifteen" />
+	<project path="device/google/gs201" name="device_google_gs201_" remote="crd" revision="fifteen" />
 	<project path="device/google/gs101" name="android_device_google_gs101" remote="lineage" />
 	<project path="device/google/gs-common" name="android_device_google_gs-common" remote="ri" revision="fifteen" />
 	<project path="device/google/pantah-kernels/6.1" name="device/google/pantah-kernels/6.1" remote="aosp" />
