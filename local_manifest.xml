@@ -34,8 +34,6 @@
 	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="themuppets" revision="lineage-22.2" />
 	<project path="vendor/google/lynx" name="proprietary_vendor_google_lynx" remote="themuppets" revision="lineage-22.2" />
 	
-	<!-- LineageOS Pixel Hardware Trees -->
-	<project name="LineageOS/android_hardware_google_pixel" path="hardware/google/pixel" remote="github" revision="lineage-22.2" />
 	<!-- Extra trees -->
 	<project name="proprietary_vendor_google_faceunlock" path="vendor/google/faceunlock" remote="crdroid-gitlab" revision="15.0" />
 	<project name="proprietary_vendor_google_camera" path="vendor/google/camera" remote="crdroid-gitlab" revision="15.0">
